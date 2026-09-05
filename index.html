@@ -390,6 +390,9 @@
     color: var(--muted-t); line-height: 1.5;
   }
   .stripe-note code { background: var(--surface-2); padding: 1px 6px; border-radius: 3px; border: 1px solid var(--line-soft); color: var(--rust); }
+  .stripe-note strong { color: var(--ink); font-weight: 600; }
+  .stripe-note a { color: var(--rust); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--rust) 40%, transparent); }
+  .stripe-note a:hover { border-bottom-color: var(--rust); }
 
   /* Contact / footer */
   .contact { text-align: center; }
@@ -446,6 +449,9 @@
   footer { border-top: 1px solid var(--line); padding: 34px 0 60px; text-align: center; }
   footer .sign { font-family: "Spectral", serif; font-style: italic; font-size: 20px; color: var(--ink-soft); }
   footer .meta { margin-top: 12px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .08em; color: var(--muted-t); text-transform: uppercase; }
+  footer .legal { margin-top: 14px; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+  footer .legal a { color: var(--rust); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--rust) 40%, transparent); }
+  footer .legal a:hover { border-bottom-color: var(--rust); }
 
   /* Reveal */
   .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
@@ -471,7 +477,7 @@
 </head>
 <body>
 <header class="hero">
-  <img class="hero-bg" src="Hero.PNG" alt="Jason's Lexus LX 570 on 40-inch tires on a high-desert mountain trail, American flag beside it and Rocky Mountain peaks behind">
+  <img class="hero-bg" src="hero.jpg" alt="Jason's Lexus LX 570 on 40-inch tires on a high-desert mountain trail, American flag beside it and Rocky Mountain peaks behind">
   <div class="hero-inner">
     <div class="hero-copy">
       <p class="eyebrow">XFACTR Adventures Presents</p>
@@ -728,7 +734,7 @@
         <span class="plabel">Your Cost</span>
         <span class="amt">$1,200</span>
         <span class="per">per person</span>
-        <span class="paidfull"><strong>A non-refundable $500 deposit reserves your spot</strong>, with the $700 balance due before the trip. Covers lodging, vehicle rentals, all trail days, and all meals for breakfast, dinner, and packed trail lunch. Oh…and steaks on the grill the last night.</span>
+        <span class="paidfull"><strong>A non-refundable $500 deposit reserves your spot.</strong> The $700 balance is charged automatically to the same card on October 22, 2026 — three weeks before we roll out. Covers lodging, vehicle rentals, all trail days, and all meals for breakfast, dinner, and packed trail lunch. Oh…and steaks on the grill the last night.</span>
       </div>
       <div class="reg-body">
         <h3>What's covered</h3>
@@ -753,9 +759,9 @@
           </div>
         </div>
 
-        <a href="https://buy.stripe.com/cNi3cvgcB13g9Vi4GN18c02" class="btn" style="width:100%" target="_blank" rel="noopener">Pay deposit &amp; reserve your spot &rarr;</a>
+        <a href="https://buy.stripe.com/7sYfZhgcBfYa4AY5KR18c03" class="btn" style="width:100%" target="_blank" rel="noopener">Pay deposit &amp; reserve your spot &rarr;</a>
 
-        <p class="stripe-note">Secure checkout powered by Stripe — you'll be taken to Stripe to complete your payment. We'll email you when the balance is due.</p>
+        <p class="stripe-note">Secure checkout powered by Stripe. Your <strong>$500 deposit is non-refundable</strong> and holds your spot. The remaining <strong>$700 is charged automatically to the same card on October 22, 2026</strong>. To cancel, email Dave by October 20, 2026. Full details in the <a href="terms.html">terms &amp; conditions</a>.</p>
       </div>
     </div>
   </div>
@@ -866,6 +872,7 @@
   <div class="wrap">
     <p class="sign">See you on the trail.</p>
     <p class="meta">Boulders &amp; Brothers — An Off-Road Christian Men's Retreat</p>
+    <p class="legal"><a href="terms.html">Terms &amp; Conditions</a></p>
   </div>
 </footer>
 
