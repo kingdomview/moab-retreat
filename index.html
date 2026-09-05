@@ -347,6 +347,13 @@
 
   /* Registration */
   .register { background: var(--bg-deep); }
+  .reg-badge {
+    display: block;
+    width: 150px; height: auto;
+    margin: 0 auto 24px;
+    filter: drop-shadow(0 10px 26px rgba(42,33,27,.34));
+  }
+  @media (max-width: 560px) { .reg-badge { width: 116px; margin-bottom: 18px; } }
   .reg-card {
     background: var(--surface); border: 1px solid var(--line);
     border-radius: 6px; box-shadow: var(--shadow); overflow: hidden;
@@ -725,6 +732,7 @@
 <section class="register" id="register">
   <div class="wrap">
     <div class="sec-head center reveal">
+      <img class="reg-badge" src="badge.webp" width="384" height="384" loading="lazy" decoding="async" onerror="this.style.display='none'" alt="Boulders and Brothers — Moab, Utah — an invitation to brotherhood">
       <p class="eyebrow">Reserve your spot</p>
       <h2>Registration</h2>
       <p>Twelve spots and only eight left. When they're gone, they're gone.</p>
