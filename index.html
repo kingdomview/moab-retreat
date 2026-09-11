@@ -352,8 +352,10 @@
   .who-point p { margin: 0; font-size: 17px; line-height: 1.6; color: var(--ink-soft); }
   @media (max-width: 560px) { .who-point { flex-direction: column; gap: 6px; } }
 
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  /* Single-column stacked blocks (Vehicles & Safety, Getting There) */
+  .two { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: start; }
   .two h3 { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 10px; }
+  .two h4 { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 15px; text-transform: uppercase; letter-spacing: .08em; margin: 26px 0 12px; color: var(--rust); }
   .two p { margin: 0 0 14px; font-size: 16.5px; color: var(--ink-soft); }
   .two ul.check li { font-size: 16.5px; }
 
@@ -479,7 +481,7 @@
 
   /* Responsive */
   @media (max-width: 860px) {
-    .questions, .cols, .two, .incl { grid-template-columns: 1fr; }
+    .questions, .cols, .incl { grid-template-columns: 1fr; }
     .reg-card { grid-template-columns: 1fr; }
     .day { grid-template-columns: 96px 1fr; }
     .day .level { grid-column: 2; justify-self: start; margin-top: 6px; }
@@ -722,13 +724,34 @@
       <div class="reveal">
         <p class="eyebrow">Logistics</p>
         <h3 style="margin-top:10px">Getting There</h3>
-        <p>Travel to and from Moab is on you — it's not included in the trip cost. We request that you fly into one of 2 airports closest to Moab so our team can pick you up. This saves you from renting a car — unless you prefer that. You can fly into Salt Lake City, UT and rent a car to drive down to Moab. However, we don't advise flights into Denver, CO because you will have to drive for 6 hours over the Rocky Mountains in November, which means roads could be icy, snow covered, or even closed. Here are the BEST choices for airports:</p>
+        <p>Travel to and from Moab is not included in the trip cost. You can fly into Salt Lake City, UT and rent a car to drive down to Moab. Just plan to arrive at the house by 5:00 PM. However, we don't advise flights into Denver, CO because you will have to drive for 6 hours over the Rocky Mountains in November, which means roads could be icy, snow covered, or even closed.</p>
+        <h4>Your Best Options</h4>
+        <p>We request that you fly into Moab or Grand Junction, CO so our team can pick you up. This saves you from renting a car or driving on icy roads. Here are the BEST choices for airports and flight times so you arrive on time.</p>
+        <h4>Arrive in Moab (Thursday, November 12, 2026)</h4>
         <ul class="check plain">
-          <li><strong>Moab, UT (CNY)</strong> — Canyonlands Regional, about 50 min to the house, the closest option</li>
-          <li><strong>Grand Junction, CO (GJT)</strong> — about 2 hrs to the house</li>
-          <li><strong>Salt Lake City, UT (SLC)</strong> — about 4–4.5 hrs to the house</li>
+          <li>From Denver (DEN): United flight <strong>UA 6070</strong> arrives in Moab (CNY) at 1:45 PM.</li>
+          <li>From Salt Lake City (SLC): Delta flight <strong>DL 4333</strong> arrives in Moab (CNY) at 4:40 PM.</li>
         </ul>
-        <p style="margin-top:14px">Our homebase will be in Spanish Valley, UT. Dave will send final directions closer to the trip. Book your flight &amp; plan your drive to arrive before 5:00 PM Mountain time on Thursday, Nov 12.</p>
+        <h4>Depart from Moab (Monday, November 16, 2026)</h4>
+        <ul class="check plain">
+          <li>To Denver (DEN): United flight <strong>UA 5013</strong> departs Moab (CNY) at 2:20 PM.</li>
+          <li>To Salt Lake City (SLC): Delta flight <strong>DL 4333</strong> departs Moab (CNY) at 5:15 PM.</li>
+        </ul>
+        <h4>Arrive in Grand Junction (Thursday, November 12, 2026)</h4>
+        <ul class="check plain">
+          <li>From Denver (DEN): United flight <strong>UA 1714</strong> arrives at 12:45 PM.</li>
+          <li>From Denver (DEN): United flight <strong>UA 5488</strong> arrives at 2:37 PM.</li>
+          <li>From Salt Lake City (SLC): Delta flight <strong>DL 4234</strong> arrives at 12:39 PM.</li>
+          <li>From Salt Lake City (SLC): Delta flight <strong>DL 4246</strong> arrives at 4:50 PM.</li>
+          <li>From Dallas/Fort Worth (DFW): American Airlines flight <strong>AA 6461</strong> arrives at 4:11 PM.</li>
+        </ul>
+        <h4>Depart from Grand Junction (Monday, November 16, 2026)</h4>
+        <ul class="check plain">
+          <li>To Denver (DEN): United flight <strong>UA 4709</strong> departs Grand Junction at 11:23 AM.</li>
+          <li>To Denver (DEN): United flight <strong>UA 1788</strong> departs Grand Junction at 1:47 PM.</li>
+          <li>To Salt Lake City (SLC): Delta flight <strong>DL 4234</strong> departs Grand Junction at 1:16 PM.</li>
+          <li>To Dallas/Fort Worth (DFW): American Airlines flight <strong>AA 3385</strong> departs Grand Junction at 1:17 PM.</li>
+        </ul>
       </div>
     </div>
   </div>
